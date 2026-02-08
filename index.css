@@ -1,0 +1,165 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fefefe;
+  color: #333;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.hero {
+  background: linear-gradient(90deg, #ff6f61, #ff4a3a);
+  color: #fff;
+  text-align: center;
+  padding: 60px 16px; /* reduced */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 22px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #ff4a3a;
+  transition: 0.2s;
+}
+
+/* ---------------- CTA SECTION ---------------- */
+.cta {
+  background: #f2f2f2;
+  padding: 40px 16px; /* reduced */
+  border-radius: 10px;
+  margin: 30px 16px;
+}
+
+.cta button {
+  padding: 10px 22px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #ff4a3a;
+  color: #fff;
+}
+
+/* ---------------- SALON GRID ---------------- */
+.salon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* mobile: 2 per row */
+  gap: 10px;              /* 🔻 reduced */
+  padding: 0 10px;
+}
+
+@media (min-width: 1024px) {
+  .salon-grid {
+    grid-template-columns: repeat(4, 1fr); /* laptop */
+    gap: 14px;          /* 🔻 reduced */
+  }
+}
+
+/* ---------------- SALON CARD (COMPACT) ---------------- */
+.salon-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;                     /* 🔻 smaller */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* 🔻 lighter */
+  padding: 8px;                           /* 🔻 reduced */
+  text-align: left;
+  transition: transform 0.15s;
+}
+
+.salon-card:hover {
+  transform: translateY(-2px);
+}
+
+/* SMALL IMAGE */
+.salon-card img {
+  width: 100%;
+  height: 90px;           /* 🔻 BIG REDUCTION */
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 6px;     /* 🔻 reduced */
+}
+
+/* TITLE */
+.salon-card h3 {
+  font-size: 0.9rem;      /* 🔻 smaller */
+  margin: 2px 0;          /* 🔻 tight */
+  line-height: 1.2;
+}
+
+/* DESCRIPTION */
+.salon-card p {
+  font-size: 0.75rem;     /* 🔻 smaller */
+  margin: 0 0 6px;        /* 🔻 tight */
+  color: #666;
+  line-height: 1.2;
+}
+
+/* ---------------- BUTTONS (COMPACT) ---------------- */
+.btn-group button {
+  width: 100%;
+  padding: 6px;           /* 🔻 reduced */
+  margin: 4px 0;          /* 🔻 reduced */
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.75rem;     /* 🔻 smaller */
+  border: none;
+  cursor: pointer;
+}
+
+.call-btn {
+  background-color: #ff4a3a;
+  color: #fff;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: #fff;
+}
+
+.view-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* ---------------- GALLERY ---------------- */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;               /* 🔻 reduced */
+  margin-top: 10px;
+}
+
+.gallery img {
+  width: calc(33% - 8px);
+  height: 120px;          /* 🔻 reduced */
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .gallery img {
+    width: calc(50% - 8px);
+  }
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  text-align: center;
+  padding: 16px 0;        /* 🔻 reduced */
+  background-color: #f1f1f1;
+  color: #333;
+  width: 100%;
+  font-size: 13px;        /* 🔻 smaller */
+}

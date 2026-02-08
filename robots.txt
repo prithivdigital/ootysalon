@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /list-your-salon
+
+Sitemap: https://ootysalon.com/sitemap.xml
