@@ -3,14 +3,13 @@ import { Helmet } from "react-helmet";
 export default function ListYourSalon() {
   return (
     <div style={{ maxWidth: "900px", margin: "auto", padding: "20px" }}>
-      
-      {/* NOINDEX – This page is for salon owners, not SEO */}
+     
       <Helmet>
         <title>List Your Salon on ootysalon.com</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
-      {/* HEADER */}
+     
       <div style={{ textAlign: "center", marginBottom: "30px" }}>
         <h1 style={{ fontSize: "2.2rem", marginBottom: "10px" }}>
           List Your Salon on ootysalon.com
@@ -20,7 +19,6 @@ export default function ListYourSalon() {
         </p>
       </div>
 
-      {/* INTRO */}
       <p style={{ lineHeight: "1.7", marginBottom: "20px" }}>
         <strong>ootysalon.com</strong> is a dedicated online salon directory created
         to help salon and barbershop owners in Ooty improve visibility and receive
@@ -33,7 +31,7 @@ export default function ListYourSalon() {
         yearly cycle.
       </p>
 
-      {/* SLOT LIMIT */}
+     
       <div
         style={{
           background: "#f8f9fa",
@@ -47,7 +45,7 @@ export default function ListYourSalon() {
         listings will be accepted until renewal or expansion.
       </div>
 
-      {/* PRICING */}
+     
       <h2 style={{ marginBottom: "10px" }}>Listing Structure & Pricing (1 Year)</h2>
 
       <ul style={{ lineHeight: "1.9", marginBottom: "24px" }}>
@@ -64,7 +62,6 @@ export default function ListYourSalon() {
         There are no monthly payment options. Payment is one-time only.
       </p>
 
-      {/* WHAT IS INCLUDED */}
       <h2 style={{ marginBottom: "10px" }}>What Your Listing Includes</h2>
 
       <ul style={{ lineHeight: "1.9", marginBottom: "24px" }}>
@@ -78,7 +75,7 @@ export default function ListYourSalon() {
         <li>Optional owner image</li>
       </ul>
 
-      {/* RENEWAL */}
+     
       <h2 style={{ marginBottom: "10px" }}>Renewal & Priority Policy</h2>
 
       <p style={{ lineHeight: "1.7", marginBottom: "20px" }}>
@@ -103,7 +100,6 @@ export default function ListYourSalon() {
         salon services, pricing, and demand.
       </p>
 
-      {/* CTA */}
       <div style={{ textAlign: "center", marginTop: "40px" }}>
         <a
           href="https://wa.me/9360491063"
@@ -122,7 +118,7 @@ export default function ListYourSalon() {
         </a>
       </div>
 
-      {/* FOOT NOTE */}
+    
       <p
         style={{
           textAlign: "center",
@@ -131,7 +127,7 @@ export default function ListYourSalon() {
           marginTop: "30px"
         }}
       >
-        ootysalon.com is owned and managed by Zero Five September.
+       
       </p>
     </div>
   );
